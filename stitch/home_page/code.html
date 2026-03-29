@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#ff9583",
+              "outline-variant": "#dbc2b0",
+              "surface-bright": "#fff9f0",
+              "primary-fixed": "#ffdad4",
+              "primary-fixed-dim": "#ffb4a7",
+              "on-secondary-container": "#683700",
+              "on-background": "#1d1b16",
+              "on-primary": "#ffffff",
+              "secondary-container": "#fe9832",
+              "surface-dim": "#dfd9d1",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#1b1c1c",
+              "inverse-surface": "#32302a",
+              "outline": "#887364",
+              "error-container": "#ffdad6",
+              "primary": "#b91e0d",
+              "on-error-container": "#93000a",
+              "surface": "#fff9f0",
+              "tertiary": "#5f5e5e",
+              "on-surface-variant": "#554336",
+              "error": "#ba1a1a",
+              "on-primary-container": "#8d0700",
+              "inverse-on-surface": "#f6f0e7",
+              "tertiary-fixed": "#e4e2e1",
+              "background": "#fff9f0",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#ffb77a",
+              "secondary": "#8f4e00",
+              "on-primary-fixed": "#400200",
+              "inverse-primary": "#ffb4a7",
+              "surface-container-high": "#ede7df",
+              "secondary-fixed": "#ffdcc2",
+              "on-secondary-fixed-variant": "#6d3a00",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed": "#2e1500",
+              "tertiary-fixed-dim": "#c8c6c5",
+              "surface-variant": "#e7e2d9",
+              "on-tertiary-container": "#444444",
+              "surface-tint": "#b91e0d",
+              "tertiary-container": "#b3b1b1",
+              "on-tertiary-fixed-variant": "#474746",
+              "on-secondary": "#ffffff",
+              "surface-container-highest": "#e7e2d9",
+              "on-surface": "#1d1b16",
+              "on-primary-fixed-variant": "#920800",
+              "surface-container-low": "#f9f3ea",
+              "surface-container": "#f3ede4"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 16px 32px -12px rgba(29, 27, 22, 0.06);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-[#fff9f0]/80 dark:bg-[#1d1b16]/80 backdrop-blur-md fixed top-0 w-full z-50 no-border tonal-shift-bg-surface-container-low shadow-sm shadow-[#1d1b16]/5">
+<nav class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-12">
+<a class="font-['Newsreader'] text-3xl font-black text-[#b91e0d] dark:text-[#ff9583] tracking-tighter" href="code.html">Bombay</a>
+<div class="hidden md:flex items-center gap-8 font-['Newsreader'] italic font-bold text-lg">
+<a class="text-[#b91e0d] dark:text-[#ff9583] border-b-2 border-[#b91e0d] pb-1 hover:scale-105 transition-transform duration-200" href="../menu_page/code.html">Menu</a>
+<a class="text-[#1d1b16] dark:text-[#fff9f0] hover:text-[#b91e0d] transition-colors hover:scale-105 transition-transform duration-200" href="../locations_page/code.html">Locations</a>
+<a class="text-[#1d1b16] dark:text-[#fff9f0] hover:text-[#b91e0d] transition-colors hover:scale-105 transition-transform duration-200" href="../story_page/code.html">Our Story</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<a href="../customizer_cart/code.html" class="material-symbols-outlined text-[#1d1b16] dark:text-[#fff9f0] hover:scale-105 transition-transform" data-icon="shopping_cart">shopping_cart</a>
+<button class="md:hidden material-symbols-outlined" data-icon="menu">menu</button>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-8 md:px-20 overflow-hidden bg-surface">
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdBkO_VDtU-goITDhopx0VOsHvPTcVQd6eDSf4nm3tX7Os06x2yaGykVz0VEhTz97QWTHnlKl1r0JENLzOACk1oa36-Rx3CFuj1euhA8pfBcHBW6S21U8IbN20Q_RFvFIF90nGhhP_jmmrZNSIr7hurlQlOCLJoiXxlLaax_KyxV8IXqk13nZsHUuSwx1eDU7CMBVe7qh3AZYBitEVDbNemb58VQSeLAEsvqSNLqPRd-0AucDDEAkDMXiGvKoegKiFoepb3UtMDlk');"></div>
+<div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="max-w-2xl">
+<span class="inline-block font-label text-secondary font-bold tracking-[0.2em] uppercase mb-4 text-sm">Since 2024</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold text-on-background leading-tight tracking-tighter mb-6">
+                        The <span class="italic text-primary">Artisanal</span> Fusion of Italy &amp; India.
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                        Hand-stretched sourdough meeting the vibrant heat of the subcontinent. Experience the wood-fired revolution.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center gap-3">
+                            Order Now
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<a href="../menu_page/code.html" class="inline-block bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 active:scale-95 transition-all">
+                            View Menu
+                        </a>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary-fixed opacity-20 rounded-full blur-3xl"></div>
+<div class="relative z-10 editorial-shadow rounded-2xl overflow-hidden transform rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="Signature Bombay Pizza" class="w-full h-[600px] object-cover" data-alt="Close-up of a rustic wood-fired pizza topped with marinated paneer cubes, fresh green coriander, sliced red chilies, and creamy mozzarella on a charred sourdough crust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvt7SvElrharbk1CS5YJyCPb8ke9Zch4WO4LgG2_jbvu0B3I86YybcFqMgC7wgr-soPzSSXlIfvQKTMlCaF_5LBVYL1-D3ci3N_N1BdvuTlTq7L_-T2P7vPXfj0l6nKOGjmKg6wa_CZQosi3DXk0bziK36uzC_Dy4hgCvOxctyUm4U8XAUk9tkPPEm7vsVTBtEtx895H1jmlVgGSzj-F6h1DsiM15NWwrbvTGMLtiY1JFWJLr3oqL0jRAJvwKLr3Uw54JguG9wQFo"/>
+<div class="absolute bottom-6 right-6 bg-surface/90 backdrop-blur-md p-6 rounded-xl border border-outline-variant/20 shadow-xl max-w-xs">
+<h3 class="font-headline italic text-2xl text-primary font-bold mb-1">Paneer Tikka Inferno</h3>
+<p class="text-xs font-label uppercase tracking-widest text-secondary font-bold">Featured Artisanal Pie</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Pizzas Bento Grid -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-5xl font-bold mb-4">Curated Selections</h2>
+<p class="text-on-surface-variant font-medium">Explore our most daring culinary experiments.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 group" href="../menu_page/code.html">
+                        Browse Full Menu <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<!-- Bento Item 1 -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-2xl overflow-hidden group relative editorial-shadow">
+<img alt="Truffle Mushroom Pizza" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Overhead shot of a gourmet pizza featuring earthy mushrooms, truffle oil drizzles, and dollops of ricotta cheese on a perfectly browned crust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp4_RLNTRnHRiTMYEQuCh5uWGDE4G3CeBaUTFtQ3_vt8uIoyWHaKa10sSviJpZ4jdYS3rgxY5WMhujdoTqaRY21Ya4VTxzPMohk0Q5TSH0SPX3p0jqLXcXjbNHnsjXs-Wj8uJogk_w6NC0bVnbr-7dVv2yHev2tCSu3iIRdBpiOMvdGWR5iCyrrJp83yR2Mp8sUEQZP8TYzTgXlryTVFyDgXAqAN7CdqYam0_tyWAwhT7Y9CAAD-JPuYdQsmK6ak4apJ4ojIrS6zs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-on-primary">
+<span class="bg-secondary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase mb-3 inline-block">Bestseller</span>
+<h3 class="font-headline text-4xl font-bold italic mb-2">Wild Mushroom &amp; Saffron</h3>
+<p class="max-w-md opacity-80">Earthy Italian forest mushrooms meeting the golden warmth of Kashmiri Saffron cream.</p>
+</div>
+</div>
+<!-- Bento Item 2 -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-2xl p-8 flex flex-col justify-center relative overflow-hidden group">
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary-container opacity-20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+<span class="material-symbols-outlined text-6xl mb-6 opacity-30" data-icon="local_fire_department">local_fire_department</span>
+<h3 class="font-headline text-3xl font-bold mb-4">The Spice Level</h3>
+<p class="mb-8 opacity-90 leading-relaxed">Every pizza is customizable. Choose from 'Milan Mild' to 'Bombay Blast'.</p>
+<div class="flex gap-2">
+<div class="w-full h-2 bg-on-primary/20 rounded-full overflow-hidden">
+<div class="w-[70%] h-full bg-secondary-container"></div>
+</div>
+</div>
+</div>
+<!-- Bento Item 3 -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-2xl p-8 flex flex-col justify-between editorial-shadow">
+<h3 class="font-headline text-2xl font-bold">Burrata &amp; Basil Oil</h3>
+<p class="text-on-surface-variant text-sm mb-6">A cold burrata heart on a hot chili-infused tomato base.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-black text-xl">$22</span>
+<button class="bg-surface-container-highest p-2 rounded-full hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Bento Item 4 -->
+<div class="md:col-span-8 bg-surface-container-highest rounded-2xl flex items-center overflow-hidden">
+<div class="p-8 md:w-1/2">
+<h3 class="font-headline text-2xl font-bold mb-2">Pesto &amp; Pistachio</h3>
+<p class="text-on-surface-variant text-sm mb-4">Creamy pistachio pesto with crushed nuts and fresh mint.</p>
+<button class="text-on-background font-bold border-b-2 border-secondary pb-1">Customize</button>
+</div>
+<div class="md:w-1/2 h-full overflow-hidden">
+<img alt="Pesto Pizza" class="w-full h-full object-cover" data-alt="Close-up of a green pesto pizza with vibrant green colors, fresh basil leaves, and scattered crushed pistachio nuts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtzmO7ld51zdFDblDoJSgCY5Ay2QWb0RsDiAnquFwaSBfRHbTemXlGy15VUUzg9EC1JBYmTeTWO1-o9DkxdriymbpvzjUIYY7bDCFIMZaAlKZ6CK91T5njk4XMZBDfSIG1Voqe6qJMQQXI98JrXSpr14FkCPL9PltiG7v-FgtiKL-vkbSIahWhJemXo-N2lOTUJrpLB73JuPTZAIMDQF4gINWC1I5IVxep7i51FeDVqSXpksKty9XqFBiNH9DpfVKPuJArI9Jn75A"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-32 px-8 overflow-hidden relative">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="grid grid-cols-2 gap-4">
+<div class="pt-12">
+<img alt="Chef cooking" class="rounded-2xl editorial-shadow mb-4 h-80 object-cover" data-alt="Artisanal chef with flour-dusted hands stretching fresh pizza dough in a rustic, sun-drenched kitchen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSTJGy7SfgAGyLPQQAdudqLUgUVRiPbKrqsgcueT1DHtEwkwGJ2nnG2KJotK1zMkg8zY8NbUn2vXHmKCkR0D5WSIF3NcDBKwnE8NY0pJUa2D6wG3jbGKOOMkzBJL67YI_JZWAGEJ39wZe9m1O-SvB7x7OzXkCIv9IaE80C6KDstCFvacqZyGDkBezi9SDH3E-7L-5RLynlaajPkjUEUbvtDiQjtS-ldDAKCxpW-RMoHsV7E6Iykb4MRymPpborMPRUaq5d325-_tQ"/>
+</div>
+<div>
+<img alt="Spices" class="rounded-2xl editorial-shadow h-96 object-cover" data-alt="An array of colorful Indian spices like turmeric, chili powder, and cumin seeds arranged in small terracotta bowls on a wooden surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjW0goY4OPXI768G1NtAA8RAUNG-t6mFs6ivUCAtb2rWnMtzZnZNhaavNMvq325zyaOZVflG3d4M1qbCvOLY3BsA48CdDDVcdBvXaKoyOVdXx86OfS0y4qKmBqqtuZiDumHJc-V6zP9f0qpZtWaHTBS4f3cH-ViDOMBY5swYWbOGa9guorm_PdJkivxYEw4ootzQ-_z8I-_oAJE3FUreomCrsUD74dfRTkyhEieWrGhLRXGPFQB-VIqwj_u0V8-Vx8Yy1R9Ud5Da4"/>
+</div>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface p-8 rounded-full shadow-2xl border-4 border-primary/10">
+<span class="material-symbols-outlined text-primary text-6xl" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-sm mb-6 block">Our Heritage</span>
+<h2 class="font-headline text-5xl font-extrabold mb-8 leading-tight">From the Streets of <span class="italic text-primary">Bombay</span> to the Hills of <span class="italic text-secondary">Naples</span>.</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p>Bombay was born from a simple obsession: what happens when you marry the structural integrity of a perfect Neapolitan crust with the complex spice profiles of Indian street food?</p>
+<p>We spent three years perfecting our 48-hour fermentation process and sourcing spices directly from small-batch farmers in Maharashtra. The result is a fusion that feels inevitable.</p>
+</div>
+<div class="mt-10 grid grid-cols-3 gap-8 text-center py-8 border-y border-outline-variant/10">
+<div>
+<div class="font-headline text-3xl font-black text-primary">48h</div>
+<div class="text-xs uppercase tracking-tighter font-bold">Fermentation</div>
+</div>
+<div>
+<div class="font-headline text-3xl font-black text-secondary">90s</div>
+<div class="text-xs uppercase tracking-tighter font-bold">Bake Time</div>
+</div>
+<div>
+<div class="font-headline text-3xl font-black text-on-background">15+</div>
+<div class="text-xs uppercase tracking-tighter font-bold">Farm Sources</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Locations Section -->
+<section class="py-24 px-8 bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-5xl font-bold mb-4">Find Your Slice</h2>
+<p class="text-on-surface-variant">Three hubs of fusion across the city.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Location 1 -->
+<div class="bg-surface rounded-2xl overflow-hidden editorial-shadow group">
+<div class="h-48 overflow-hidden">
+<img alt="Bandra Store" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Interior of a modern, stylish restaurant with warm wood accents, industrial lighting, and a prominent copper wood-fired oven in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJN7fhar_TPhQcK11pPX7VPzP4xmoZObv2aYnXSkRT8zMJ5c63AjaeTq43s6zsYZVW17nkO-ZlrMbglI_RlE9xlA-3DtH9SqPHG7AyTdXziZ7r5lQP9gNTmOFhkqDkwVQalCMnEIW4C0TBPpUdS8vVV3iuW3Ttg_TWAAA4LSfz_JXybU9aZEM8UqfQYJmcU8gzwCi23vviova07v68lbN6JdWrRbP4ZHeVyKAevALSSoZ43yeTS1qE_EX8JBoDPz917TTtRtCjE30"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold mb-2">Bandra Flagship</h3>
+<p class="text-on-surface-variant text-sm mb-6">Hill Road, West. The original birthplace of our paneer crust.</p>
+<div class="flex items-center gap-2 text-primary font-bold text-sm">
+<span class="material-symbols-outlined text-lg" data-icon="location_on">location_on</span>
+                                View Map
+                            </div>
+</div>
+</div>
+<!-- Location 2 -->
+<div class="bg-surface rounded-2xl overflow-hidden editorial-shadow group">
+<div class="h-48 overflow-hidden">
+<img alt="Kala Ghoda Store" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Exterior of a classic heritage building in an art district, featuring large arched windows and a minimalist restaurant sign." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYEHPlS4gMWSLK7xh9ZFG18z7EQRGqSRdhuscrJq1HwEsUKelJQSRAtn03DQh5rg5pLLsOGLUwOAxw-12lcH11DhvcGJ1jx0pbKYwzqc9iGGnK1kw-R7ug5BiQH8DKP_JdonlUp8BuuXzYelq5iSYi4ZtvjcTAK3LUoUX-r0LV2ymxwnyYEwzu-Lxx6Bo096UdbYtz66iI7S5-6DI2LhpwXKKwPT7qVVfuXe6tPBoHUw16DNNRco4hNarRrx17UTZ2nfAYQQvoiD4"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold mb-2">Kala Ghoda</h3>
+<p class="text-on-surface-variant text-sm mb-6">Art District. A gallery-inspired space for slow-dining pies.</p>
+<div class="flex items-center gap-2 text-primary font-bold text-sm">
+<span class="material-symbols-outlined text-lg" data-icon="location_on">location_on</span>
+                                View Map
+                            </div>
+</div>
+</div>
+<!-- Location 3 -->
+<div class="bg-surface rounded-2xl overflow-hidden editorial-shadow group">
+<div class="h-48 overflow-hidden">
+<img alt="Powai Store" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A trendy rooftop dining area with potted plants, comfortable seating, and a panoramic view of an urban lake at dusk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNjfiAwAss3C1XSRkz9h0Uj9bgiZqzEvLxy7sJG1Bdbxek4EiQ51W-Tu_SuGUwJxoxUgrASZFtYMoULysZ8bW4WFIGYVbbnNzTy-k2GH5U86t0YvmeZ3vsbrAXdD84TYUX2vonf84LP2V05YYHG-qlk6W711rq7BK2xm_4--ZN5j1p9wEax0lIdWYDgEynW7bwRarzymC9GldfypJ_NxZsHVHQeEnveQZGoPj_L90I3FP73Au7Ldgh-N1PaqHF33mlZIXR3cZVeRc"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold mb-2">Powai Lake</h3>
+<p class="text-on-surface-variant text-sm mb-6">Lakefront. Sunset views paired with fiery fusion pizzas.</p>
+<div class="flex items-center gap-2 text-primary font-bold text-sm">
+<span class="material-symbols-outlined text-lg" data-icon="location_on">location_on</span>
+                                View Map
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-24 px-8 bg-primary">
+<div class="max-w-4xl mx-auto text-center text-on-primary">
+<h2 class="font-headline text-5xl font-bold mb-6 italic">Join the Spice Circle</h2>
+<p class="text-xl mb-10 opacity-90">Get exclusive access to new seasonal fusion pies and pop-up events.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-secondary-container" placeholder="Your email address" type="email"/>
+<button class="bg-secondary-container text-on-secondary-container font-bold px-8 py-4 rounded-xl hover:bg-white transition-colors" type="submit">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f9f3ea] dark:bg-[#12110e] w-full py-12 px-8 bg-surface-container-low flat no-shadows">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+<div>
+<a class="font-['Newsreader'] text-xl font-bold text-[#1d1b16] dark:text-[#fff9f0]" href="#">Bombay</a>
+<p class="font-['Plus_Jakarta_Sans'] text-xs text-[#1d1b16]/70 dark:text-[#fff9f0]/70 mt-2 max-w-xs">Crafting the unexpected since 2024. Hand-made dough, heart-made fusion.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 font-['Plus_Jakarta_Sans'] text-sm tracking-wide uppercase">
+<a class="text-[#1d1b16]/70 dark:text-[#fff9f0]/70 hover:text-[#b91e0d] dark:hover:text-[#ff9583] transition-colors" href="#">Instagram</a>
+<a class="text-[#1d1b16]/70 dark:text-[#fff9f0]/70 hover:text-[#b91e0d] dark:hover:text-[#ff9583] transition-colors" href="#">Facebook</a>
+<a class="text-[#1d1b16]/70 dark:text-[#fff9f0]/70 hover:text-[#b91e0d] dark:hover:text-[#ff9583] transition-colors" href="#">Contact Us</a>
+<a class="text-[#1d1b16]/70 dark:text-[#fff9f0]/70 hover:text-[#b91e0d] dark:hover:text-[#ff9583] transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="text-[#1d1b16]/70 dark:text-[#fff9f0]/70 text-xs md:text-right">
+                © 2024 Bombay Artisanal Fusion. All Rights Reserved.
+            </div>
+</div>
+</footer>
+<script src="../main.js"></script>
+</body></html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout | Bombay Artisanal Fusion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-container": "#ff9583",
+                        "outline-variant": "#dbc2b0",
+                        "surface-bright": "#fff9f0",
+                        "primary-fixed": "#ffdad4",
+                        "primary-fixed-dim": "#ffb4a7",
+                        "on-secondary-container": "#683700",
+                        "on-background": "#1d1b16",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#fe9832",
+                        "surface-dim": "#dfd9d1",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "inverse-surface": "#32302a",
+                        "outline": "#887364",
+                        "error-container": "#ffdad6",
+                        "primary": "#b91e0d",
+                        "on-error-container": "#93000a",
+                        "surface": "#fff9f0",
+                        "tertiary": "#5f5e5e",
+                        "on-surface-variant": "#554336",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#8d0700",
+                        "inverse-on-surface": "#f6f0e7",
+                        "tertiary-fixed": "#e4e2e1",
+                        "background": "#fff9f0",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#ffb77a",
+                        "secondary": "#8f4e00",
+                        "on-primary-fixed": "#400200",
+                        "inverse-primary": "#ffb4a7",
+                        "surface-container-high": "#ede7df",
+                        "secondary-fixed": "#ffdcc2",
+                        "on-secondary-fixed-variant": "#6d3a00",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#2e1500",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "surface-variant": "#e7e2d9",
+                        "on-tertiary-container": "#444444",
+                        "surface-tint": "#b91e0d",
+                        "tertiary-container": "#b3b1b1",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e7e2d9",
+                        "on-surface": "#1d1b16",
+                        "on-primary-fixed-variant": "#920800",
+                        "surface-container-low": "#f9f3ea",
+                        "surface-container": "#f3ede4"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container">
+<!-- TopNavBar (Shared Component) -->
+<nav class="bg-[#fff9f0]/80 dark:bg-[#1d1b16]/80 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm shadow-[#1d1b16]/5">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<a href="../home_page/code.html" class="font-['Newsreader'] text-3xl font-black text-[#b91e0d] dark:text-[#ff9583] tracking-tighter">Bombay</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Newsreader'] italic font-bold text-lg text-[#1d1b16] dark:text-[#fff9f0] hover:text-[#b91e0d] transition-colors hover:scale-105 transition-transform duration-200" href="../menu_page/code.html">Menu</a>
+<a class="font-['Newsreader'] italic font-bold text-lg text-[#1d1b16] dark:text-[#fff9f0] hover:text-[#b91e0d] transition-colors hover:scale-105 transition-transform duration-200" href="../locations_page/code.html">Locations</a>
+<a class="font-['Newsreader'] italic font-bold text-lg text-[#1d1b16] dark:text-[#fff9f0] hover:text-[#b91e0d] transition-colors hover:scale-105 transition-transform duration-200" href="../story_page/code.html">Our Story</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="../customizer_cart/code.html" class="text-[#b91e0d] dark:text-[#ff9583] hover:scale-105 transition-transform duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- Main Checkout Canvas -->
+<main class="pt-28 pb-20 px-4 md:px-8 max-w-6xl mx-auto">
+<header class="mb-12">
+<h1 class="text-5xl font-black text-on-background tracking-tight">Finalize <span class="italic font-light text-primary">Order</span></h1>
+<p class="text-tertiary mt-2 font-body tracking-wide">Secure checkout for your artisanal Bombay feast.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Checkout Form Sections -->
+<div class="lg:col-span-7 space-y-12">
+<!-- Delivery/Pickup Toggle -->
+<section>
+<h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-sm font-bold">1</span>
+                        Service Type
+                    </h2>
+<div class="grid grid-cols-2 gap-4 bg-surface-container-low p-2 rounded-xl">
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-surface-container-lowest shadow-sm text-primary font-bold">
+<span class="material-symbols-outlined" data-icon="delivery_dining">delivery_dining</span>
+                            Delivery
+                        </button>
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-lg text-tertiary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+                            Pickup
+                        </button>
+</div>
+</section>
+<!-- Contact & Address -->
+<section>
+<h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-sm font-bold">2</span>
+                        Delivery Details
+                    </h2>
+<div class="space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Full Name</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg focus:ring-2 focus:ring-primary/20 p-4 font-body" placeholder="Arjun Mehta" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Phone Number</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg focus:ring-2 focus:ring-primary/20 p-4 font-body" placeholder="+91 98765 43210" type="tel"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Delivery Address</label>
+<textarea class="w-full bg-surface-container-highest border-none rounded-lg focus:ring-2 focus:ring-primary/20 p-4 font-body" placeholder="Apartment, Street name, Area..." rows="3"></textarea>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Delivery Instructions (Optional)</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg focus:ring-2 focus:ring-primary/20 p-4 font-body text-sm" placeholder="Gate code, landmark, etc." type="text"/>
+</div>
+</div>
+</section>
+<!-- Payment Methods -->
+<section>
+<h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-sm font-bold">3</span>
+                        Payment Method
+                    </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<label class="relative cursor-pointer">
+<input checked="" class="peer sr-only" name="payment" type="radio"/>
+<div class="p-4 rounded-xl border-2 border-transparent bg-surface-container-low peer-checked:border-primary peer-checked:bg-primary-fixed/10 transition-all flex flex-col items-center gap-2 text-center">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="credit_card">credit_card</span>
+<span class="text-sm font-bold">Cards</span>
+</div>
+</label>
+<label class="relative cursor-pointer">
+<input class="peer sr-only" name="payment" type="radio"/>
+<div class="p-4 rounded-xl border-2 border-transparent bg-surface-container-low peer-checked:border-primary peer-checked:bg-primary-fixed/10 transition-all flex flex-col items-center gap-2 text-center">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="account_balance">account_balance</span>
+<span class="text-sm font-bold">UPI / Net</span>
+</div>
+</label>
+<label class="relative cursor-pointer">
+<input class="peer sr-only" name="payment" type="radio"/>
+<div class="p-4 rounded-xl border-2 border-transparent bg-surface-container-low peer-checked:border-primary peer-checked:bg-primary-fixed/10 transition-all flex flex-col items-center gap-2 text-center">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="payments">payments</span>
+<span class="text-sm font-bold">Cash</span>
+</div>
+</label>
+</div>
+</section>
+</div>
+<!-- Order Summary Sidebar -->
+<aside class="lg:col-span-5 lg:sticky lg:top-24">
+<div class="bg-surface-container p-8 rounded-2xl shadow-xl shadow-on-background/5">
+<h3 class="text-2xl font-bold mb-6">Order Summary</h3>
+<div class="space-y-6 mb-8">
+<div class="flex items-center gap-4">
+<img class="w-16 h-16 rounded-lg object-cover" data-alt="close-up of gourmet fusion pizza with fresh basil and exotic indian spices on a rustic wooden board" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnj9gPNIyCcB26B8BzT7Y0YP1yELpWhegiJZzfrI3eTQRc5PzK5c4l8eBbcG6vBK75K08cIFuJ_2cC8pCI9Vo_IbppiDi7FdyZBFBs0NiGqpCUr8YxTcUVI6W1YuxtbnpZW3nGKwSn0tWremaSx2NspNmzRchAV9pEA4s44FVihHuU_Qaicikbt6yP36sUVq8xGBYo6L1jqYN3Y54tjNgAjlEylu_8H5JkUZe3QV7nE1UtYw74JWF30z20OIpTSU6NzVysUnnQA-k"/>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">Pesto Paneer Tikka Pizza</h4>
+<p class="text-xs text-tertiary uppercase tracking-wider">Regular • Thin Crust</p>
+</div>
+<span class="font-bold">₹749</span>
+</div>
+<div class="flex items-center gap-4">
+<img class="w-16 h-16 rounded-lg object-cover" data-alt="crispy masala potato wedges served in a modern ceramic bowl with a side of creamy saffron dip" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtqsrgopXiQZR1daEGoQ60S6Sa3pl4iFeIwi8XUi1qrKiddzWkwuAWnk7pNdnbiSJRzX_tDNf7YCTqm_NfYNLq7fJTjT5PL-0UHQQpI16ZoWqW2vL6u86R_HYJsPamAEsH5FJfJr8UD0RQF4u1HMsth-4csU60vP7mTqrd_HOZ6yhU11XQa3PDLvht-wDcMpiG4riLrJeiW_RPABf0wsnxSiqExGustsj_nOesJ28wOGW5uCLTchf-srJmZbiQpTjyKeOEB3d-ag4"/>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">Masala Gunpowder Wedges</h4>
+<p class="text-xs text-tertiary uppercase tracking-wider">Side Dish</p>
+</div>
+<span class="font-bold">₹199</span>
+</div>
+</div>
+<div class="space-y-3 pt-6 border-t border-outline-variant/30 text-on-surface-variant">
+<div class="flex justify-between">
+<span>Subtotal</span>
+<span class="font-medium">₹948</span>
+</div>
+<div class="flex justify-between">
+<span>Delivery Fee</span>
+<span class="text-secondary font-medium">₹45</span>
+</div>
+<div class="flex justify-between">
+<span>Taxes &amp; GST</span>
+<span class="font-medium">₹86</span>
+</div>
+<div class="flex justify-between pt-4 text-on-surface">
+<span class="text-xl font-black">Total</span>
+<span class="text-2xl font-black text-primary tracking-tight">₹1,079</span>
+</div>
+</div>
+<!-- Promo Code -->
+<div class="mt-8 flex gap-2">
+<input class="flex-1 bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-primary/20" placeholder="Promo Code" type="text"/>
+<button class="px-4 py-2 bg-secondary text-on-secondary rounded-lg font-bold text-xs uppercase tracking-widest hover:scale-105 transition-transform">Apply</button>
+</div>
+<button class="w-full mt-8 py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-xl font-bold text-lg shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+                        Place Order
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-center text-[10px] text-tertiary mt-6 uppercase tracking-[0.2em]">Secure 256-bit SSL Encryption</p>
+</div>
+<!-- Trusted Badge -->
+<div class="mt-6 flex items-center justify-center gap-8 opacity-40 grayscale">
+<span class="material-symbols-outlined text-4xl" data-icon="verified_user">verified_user</span>
+<span class="material-symbols-outlined text-4xl" data-icon="eco">eco</span>
+<span class="material-symbols-outlined text-4xl" data-icon="electric_bolt">electric_bolt</span>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-[#f9f3ea] dark:bg-[#12110e] w-full py-12 px-8 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+<div class="font-['Newsreader'] text-xl font-bold text-[#1d1b16] dark:text-[#fff9f0]">Bombay Artisanal Fusion</div>
+<div class="flex flex-wrap justify-center gap-6 font-['Plus_Jakarta_Sans'] text-sm tracking-wide uppercase">
+<a class="text-[#1d1b16]/70 dark:text-[#fff9f0]/70 hover:text-[#b91e0d] dark:hover:text-[#ff9583] transition-colors" href="#">Instagram</a>
+<a class="text-[#1d1b16]/70 dark:text-[#fff9f0]/70 hover:text-[#b91e0d] dark:hover:text-[#ff9583] transition-colors" href="#">Facebook</a>
+<a class="text-[#1d1b16]/70 dark:text-[#fff9f0]/70 hover:text-[#b91e0d] dark:hover:text-[#ff9583] transition-colors" href="#">Contact Us</a>
+<a class="text-[#1d1b16]/70 dark:text-[#fff9f0]/70 hover:text-[#b91e0d] dark:hover:text-[#ff9583] transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="font-['Plus_Jakarta_Sans'] text-xs tracking-wide uppercase text-[#1d1b16]/50 dark:text-[#fff9f0]/50 md:text-right">
+                © 2024 Bombay Artisanal Fusion. All Rights Reserved.
+            </div>
+</div>
+</footer>
+<script src="../main.js"></script>
+</body></html>
